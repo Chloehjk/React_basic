@@ -23,5 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 #plus_sth
-reportWebVitals.js
-setupTests.js
+.reportWebVitals.js
+.setupTests.js
