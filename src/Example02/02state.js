@@ -1,30 +1,28 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-function App() {
-    return (
-        <div className='container'>
-            <h1>Hello World</h1>
-            <FuncComp initNumber={2}></FuncComp>
-            <ClassComp initNumber={2}></ClassComp>
-        </div>
+class Counter extends Component{
+
+  state = {
+    number : 0
+  }
+  render(){
+    const {number} = this.state;
+    return(
+      <div>
+        <h1>{number}</h1>
+        <button onClick={() => {
+          this.setState({number : number +1})
+        }}>
+          +1
+        </button>
+        <button onClick={()=>{
+          this.setState({number : number -1})
+        }}>
+          -1
+        </button>
+      </div>
     );
+  }
 }
 
-function FuncComp() {
-    return (
-        <div className='container'>
-            <h2>function style component</h2>
-        </div>
-    );
-};
-
-class ClassComp extends React.Component{
-    render(){
-        return(
-            <div className='container'>
-                <h2>function style component</h2>
-            </div>
-        );
-    };  
-};
-export default App;
+export default Counter
