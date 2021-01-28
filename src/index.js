@@ -1,16 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import AllExample01 from './AllExample01'
-import AllExample02 from './AllExample02'
-import AllExample03 from './AllExample03'
+import AllExample01 from './AllExample01';
+import AllExample02 from './AllExample02';
+import AllExample03 from './AllExample03';
+import AllExample04 from './AllExample04';
+import AllExample05 from './AllExample05';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <AllExample01 /> */}
     {/* <AllExample02 /> */}
-    <AllExample03 />
+    {/* <AllExample03 /> */}
+    {/* <AllExample04 /> */}
+    <AllExample05 />
   </React.StrictMode>,
   document.getElementById('root')
 );
