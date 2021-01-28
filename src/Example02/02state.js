@@ -6,7 +6,9 @@ class Counter extends Component{
     number : 0
   }
   render(){
+
     const {number} = this.state;
+
     return(
       <div>
         <h1>{number}</h1>
@@ -22,7 +24,7 @@ class Counter extends Component{
         </button>
       </div>
     );
-  }
-}
+  };
+};
 
 export default Counter
