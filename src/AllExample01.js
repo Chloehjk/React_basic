@@ -12,7 +12,7 @@ export default function AllExample01() {
         {/* <JSX02 /> */}
         {/* <ClassComponent01 /> */}
         {/* <ClassComponent02 /> */}
-        {/* <ClassCounter /> */}
+        <ClassCounter />
         {/* <FunctionCounter /> */}
         {/* <JSXCSS /> */}
         {/* <JSXJS /> */}
