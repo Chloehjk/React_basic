@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import Practice from './Practice';
 import AllExample01 from './AllExample01';
 import AllExample02 from './AllExample02';
 import AllExample03 from './AllExample03';
@@ -15,7 +14,6 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Practice /> */}
     {/* <AllExample01 /> */}
     {/* <AllExample02 /> */}
     {/* <AllExample03 /> */}

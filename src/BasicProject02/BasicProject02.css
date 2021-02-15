@@ -1,3 +1,38 @@
 body {
-    background-color: white;
+    background-color: #EFF5F9;
+}
+
+#topcontainer {
+    background-color:#2978B4;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    height: 80px;
+    display : flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+#cartcontainer {
+    position : relative;    
+    align-items: center;    
+}
+
+#cart {
+    width: 35px;
+    height: 35px;
+    margin-left : 50px;
+    margin-top : 18px;
+}
+
+#circle {
+    background-color: #7DC1EF;
+    width:20px;
+    height:20px;
+    border-radius: 25px;
+    font-size: 15px;
+    position: absolute;
+    left: 80px;
+    top: 10px;
+    text-align: center;
 }
