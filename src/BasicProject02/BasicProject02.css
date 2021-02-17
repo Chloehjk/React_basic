@@ -43,7 +43,7 @@ body {
 #maincontainer {
     width: 1000px;
     height: 1000px;
-    border : 1px solid black;
+    /* border : 1px solid black; */
     margin : 0 auto;
 }
 
@@ -58,7 +58,7 @@ body {
 }
 
 .list {
-    border : 1px solid yellowgreen;
+    /* border : 1px solid yellowgreen; */
     display: flex;
 }
 
@@ -68,27 +68,33 @@ div.image > img {
 }
 
 .info {
-    padding: 10px;
-    border : 1px solid red;
+    padding: 15px;
+    /* border : 1px solid red; */
     width: 750px;
     display: block; 
     align-content: center;
 }
 
 .book {
-    border : 1px solid blue;
+    /* border : 1px solid blue; */
     font-size : 18px;
     font-weight: 700;
-    margin : 5px;
-    
 }
 
-.price {
-    border : 1px solid blue;
+.description {
+    font-size : 15px;
+    font-weight: 500;
+}
+
+#price {
+    /* border : 1px solid blue; */
     font-size : 15px;
     font-weight: 800;
     color: gray;
-    margin: 5px;
+}
+
+.count {
+    padding : 15px;
 }
 
 .up > img {
@@ -97,4 +103,33 @@ div.image > img {
 
 .down > img {
     width : 15px;
+}
+
+#num1, #num2, #num3 {
+    font-weight: 700;
+    text-align: center;
+}
+
+#line {
+    margin : 0 auto;
+    margin-top: 30px;    
+    border : 0.5px solid #BEC6CF;
+}
+
+#total {
+    width: 900px;
+    padding-top: 20px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+#total > span:nth-child(1) {
+    font-weight: 800;
+    font-size : 20px;
+}
+
+#total > span:nth-child(2) {
+    font-weight: 800;
+    font-size: 20px;
+    float : right;
 }
