@@ -1,8 +1,6 @@
 import './BasicProject02.css';
 import React, { useState } from 'react';
 import cart from './image/shopping-cart.png';
-import Bookprice from './price';
-
 
 
 export default function BasicProject02() {
@@ -10,7 +8,11 @@ export default function BasicProject02() {
     const [num1, setNum1] = useState(0);
     const [num2, setNum2] = useState(0);
     const [num3, setNum3] = useState(0);
-    const [total, setTotal] = useState(0);
+
+    const price1 = parseInt(16200);
+    const price2 = parseInt(16200);
+    const price3 = parseInt(13500);
+
 
     const plusOne1 = () => {
         setNum1(num1 + 1)
@@ -45,7 +47,7 @@ export default function BasicProject02() {
             <div id='shoppinglist'>Shopping List</div>
             <div id='cartcontainer'>
                 <img src={cart} id='cart' />
-                <div id='circle'>{ num1+num2+num3 }</div>
+                <div id='circle'>{ num1 + num2 + num3 }</div>
             </div>
         </div>
         <div id='maincontainer'>
@@ -58,7 +60,7 @@ export default function BasicProject02() {
                     <div className='info'>
                         <div className='book'>매출을 높이는 실전 구글 광고 마케팅</div>
                         <div className='description'>검색, 디스플레이, 유튜브를 활용한 리마케팅 광고</div>
-                        <Bookprice price='16200' />
+                        <div id='price'><span>\</span>{price1}</div>
                     </div>
                     <div className='count'>
                         <div className='up' onClick={plusOne1}>
@@ -77,7 +79,7 @@ export default function BasicProject02() {
                     <div className='info'>
                         <div className='book'>마켓4.0 그로스해킹</div>
                         <div className='description'>애자일/데이터 기반으로 진화한 디지털 마케팅 가이드</div>
-                        <Bookprice price='16200' />
+                        <div id='price'><span>\</span>{price2}</div>
                     </div>
                     <div className='count'>
                         <div className='up' onClick={plusOne2}>
@@ -96,7 +98,7 @@ export default function BasicProject02() {
                     <div className='info'>
                         <div className='book'>디지털마케팅 개론 4차 산업혁명 시대의 마케팅 가이드</div>
                         <div className='description'>애자일/데이터 기반으로 진화한 디지털 마케팅 가이드</div>
-                        <Bookprice price='13500' />
+                        <div id='price'><span>\</span>{price3}</div>
                     </div>
                     <div className='count'>
                         <div className='up' onClick={plusOne3}>
@@ -110,9 +112,9 @@ export default function BasicProject02() {
                 </div>
             </div>
             <div id='line'></div>
-            <div id='total'>
+            <div id='total'> 
                 <span>Total</span>
-                <span>\{ Bookprice.value }</span>
+                <span>\{ num1*price1 + num2*price2 + num3*price3 }</span>
             </div>
         </div>
         </>

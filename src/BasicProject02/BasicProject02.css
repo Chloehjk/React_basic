@@ -53,10 +53,6 @@ body {
     font-weight: 800;
 }
 
-#bookcontainer {
-    border : 1px solid pink;
-}
-
 .list {
     /* border : 1px solid yellowgreen; */
     display: flex;

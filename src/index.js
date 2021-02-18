@@ -21,7 +21,7 @@ ReactDOM.render(
     {/* <AllExample05 /> */}
     {/* <BasicProject01 /> */}
     <BasicProject02 />
-  </React.StrictMode>,
+    </React.StrictMode>,
   document.getElementById('root')
 );
 
