@@ -11,6 +11,7 @@ import AllExample05 from './AllExample05';
 import BasicProject01 from'./BasicProject01/BasicProject01';
 import BasicProject02 from'./BasicProject02/BasicProject02';
 import reportWebVitals from './reportWebVitals';
+import AdvancedProject from './AdvancedProject01/AdvancedProject';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -20,7 +21,8 @@ ReactDOM.render(
     {/* <AllExample04 /> */}
     {/* <AllExample05 /> */}
     {/* <BasicProject01 /> */}
-    <BasicProject02 />
+    {/* <BasicProject02 /> */}
+    <AdvancedProject />
     </React.StrictMode>,
   document.getElementById('root')
 );
