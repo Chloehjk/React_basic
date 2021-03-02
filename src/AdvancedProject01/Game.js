@@ -20,7 +20,7 @@ function Game(){
         setXisNext(!xIsNext);
     }
 
-    // const jumpTo = () => {
+      // const jumpTo = () => {
 
     // }
 
